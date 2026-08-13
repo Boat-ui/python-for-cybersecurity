@@ -1,0 +1,5 @@
+print("Enock")
+print("Uenr")
+print("I.T")
+print("Cybersecurity")
+print("Python")

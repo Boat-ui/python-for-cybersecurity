@@ -1,0 +1,5 @@
+print("My name is Enock")
+print("I am a student at UENR learning python programming")
+print("I am interested in cybersecurity")
+print("I want to become a cybersecurity professional")
+print("Day 1 of learning python programming")
