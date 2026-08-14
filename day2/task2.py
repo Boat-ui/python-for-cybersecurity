@@ -1,0 +1,10 @@
+name = input("what is your name?:")
+age = input("what is your age?:")
+uni = input("what is your university?:")
+goal = input("what is your career goal?:")
+
+age = int(age)
+print("Hello", name, "welcome")
+print("You are", age, "years old? Great")
+print(uni, "is a great school and you chose well")
+print("And", goal, "is a nice goal, nice to meet you")
