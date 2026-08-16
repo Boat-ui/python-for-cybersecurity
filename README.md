@@ -1,49 +1,176 @@
-Day 1:
-
-I started my python journey today and I learnt about the print() function and strings. Ran my first python and did a first day task to show my understanding.
+\# Python for Cybersecurity
 
 
 
-Day 2:
-
-Today, I learnt Variables, integers, type conversion, inputs
-Variables are containers used to store values, it can be strings or integers.
+My journey learning Python with a focus on cybersecurity.
 
 
 
-Integers are numbers
+\## Day 1:
 
 
 
-Type conversion is changing a value type to another type. For example you can change text(string) to numbers(integers) and it is done using int().
-Pic: age = "15"
+I started my Python journey today.
 
-to change age to number, we use;
+
+
+\### What I learned
+
+
+
+\- `print()`
+
+\- Strings
+
+\- Running Python programs
+
+
+
+\## Day 2:
+
+
+
+Today, I learned: Variables, integers, type conversion, inputs.
+
+
+
+Variables are containers used to store values. They can be strings or integers.
+
+
+
+\### Integers are numbers
+
+
+
+\### Type conversion
+
+
+
+Type conversion is changing a value type to another type. For example, you can change text (string) to a number (integer), and it is done using `int()`.
+
+
+
+```python
+
+age = "15"
+
+```
+
+
+
+To change `age` to a number, we use:
+
+
+
+```python
+
 age = int(age)
 
-and python reassigns a number(integer) to variable age.
+```
 
 
 
-And to change back to text(string), we do this;
-
-age = str(age) \*To be learnt soon
+Python then reassigns a number (integer) to the variable `age`.
 
 
 
-Inputs are used to ask questions. For example you want a user to input their name but not in the codes, you use input() and python pauses when it gets there to ask the required info before moving on.
-
-Example; name = input("What is your name?")
+And to change back to text (string), we do this:
 
 
 
-Python returns responses from input() as strings
+```python
+
+age = str(age)
+
+```
 
 
 
-When python gets there, it pauses to ask the value to assign to the variable name before moving on.
+\*To be learnt soon.\*
 
 
 
-Did all practices and tasks under each day so refer to the days for the codes.
+\### Inputs
+
+
+
+Inputs are used to ask questions. For example, if you want a user to input their name rather than putting it directly in the code, you use `input()`, and Python pauses when it gets there to ask for the required information before moving on.
+
+
+
+Example:
+
+
+
+```python
+
+name = input("What is your name?")
+
+```
+
+
+
+Python returns responses from `input()` as strings.
+
+
+
+When Python gets there, it pauses to ask for the value to assign to the variable `name` before moving on.
+
+
+
+Did all practices and tasks under each day, so refer to the days for the codes.
+
+
+
+\## Day 3:
+
+
+
+Today I learned:
+
+
+
+\- Comparison operators, and they are used to check values against other values.
+
+\- Booleans, and they are the results from a comparison.
+
+\- `if` statements check whether a condition is true or false, and if it is true, Python executes the indented code.
+
+\- `else` statements are used to execute code indented in it when a condition is `False`.
+
+\- Indentation tells Python that the code is a part of the code before it and should be executed together.
+
+
+
+\### Assignment for the Day:
+
+
+
+\*\*Mini Security Login Checker\*\*
+
+
+
+Your program should ask the user for:
+
+
+
+\- Username
+
+\- Password
+
+\- Number of failed login attempts
+
+
+
+Then:
+
+
+
+\- If failed attempts are 5 or more, print a warning.
+
+\- Otherwise, tell them the attempts are within the limit.
+
+\- Print the username somewhere in the result.
+
+\- Print `"Security check completed"` at the end regardless of the number of attempts.
 
