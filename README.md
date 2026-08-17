@@ -84,7 +84,7 @@ Today I learned:
 
 - Indentation tells Python that the code is a part of the code before it and should be executed together.
 
-### Assignment for the Day
+### Assignment Day3
 
 **Mini Security Login Checker**
 Your program should ask the user for:
@@ -104,3 +104,40 @@ Then:
 - Print the username somewhere in the result.
 
 - Print `"Security check completed"` at the end regardless of the number of attempts.
+
+## Day 4
+
+Today I learned:
+
+- `and` is used to combine two or more conditions, and all conditions must be `True` for the final result to be `True`.
+- `or` is used to combine two or more conditions, and at least one condition must be `True` for the final result to be `True`.
+- I learned how to use `and` and `or` with comparison operators and `if/else` statements.
+- I learned that with `and`, even if one condition is `False`, the whole result becomes `False`.
+- I learned that with `or`, the result is only `False` when all the conditions are `False`.
+- I also learned that an `else` statement can cover different situations when multiple conditions are being checked, so the message inside `else` should accurately describe what the condition actually means.
+
+### Security Practice
+
+I built security decision programs that used a username, age, and failed login attempts.
+
+I used `and` to check if two conditions were true at the same time, such as checking whether a user was an adult and had multiple failed login attempts.
+
+I also used `or` to create a security alert when either the user's age was below 18 or the number of failed login attempts was 5 or more.
+
+### Assignment for Day4
+
+#### **Security Alert Program**
+
+The program asks the user for:
+
+- Username
+- Age
+- Number of failed login attempts
+
+The program then checks:
+
+- If the user is below 18 **or** has 5 or more failed login attempts, it displays a `Security Alert`.
+- Otherwise, it displays `No immediate Alert`.
+- The program prints `Security check complete` at the end.
+
+I tested the program with different combinations of ages and failed login attempts to make sure both the `if` and `else` conditions worked correctly.
