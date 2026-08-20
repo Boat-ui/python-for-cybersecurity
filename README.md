@@ -141,3 +141,47 @@ The program then checks:
 - The program prints `Security check complete` at the end.
 
 I tested the program with different combinations of ages and failed login attempts to make sure both the `if` and `else` conditions worked correctly.
+
+## Day 5
+
+Today I learned:
+
+- `elif` statements, which means "else if" and are used when there are multiple possible conditions.
+- Python checks `if`, `elif`, and `else` conditions from top to bottom.
+- Once Python finds a condition that is `True`, it executes that block and does not continue to the remaining `elif` or `else` blocks.
+- The order of conditions matters because Python executes the first condition that is `True`.
+- Multiple `elif` statements can be used when there are several possible outcomes.
+- Nested `if` statements, which are `if` statements placed inside another `if` statement.
+- A nested `if` is only checked when the outer `if` condition is `True`.
+- I learned that `else` statements can belong to either an outer `if` or an inner `if`, depending on their indentation.
+- I also learned how to compare strings using `==`.
+
+### Security Practice
+
+I built several security decision programs using `if`, `elif`, `else`, and nested `if` statements.
+
+I created a Login Risk Classifier that checks the number of failed login attempts and classifies the activity as critical, suspicious, or normal.
+
+I also used a nested `if` to check whether a login came from a trusted device when there were multiple failed login attempts.
+
+### Assignment for Day 5
+
+#### Account Risk Classifier
+
+The program asks the user for:
+
+- Username
+- Age
+- Number of failed login attempts
+- Whether the login is from a trusted device
+
+The program then:
+
+- Displays a critical warning if there are 10 or more failed attempts.
+- For 5–9 failed attempts, uses a nested `if` to check whether the device is trusted.
+- Displays a warning for multiple failed attempts from a trusted device.
+- Displays a suspicious login warning if the device is untrusted.
+- Displays that login activity appears normal if there are fewer than 5 failed attempts.
+- Prints `Security check complete` at the end.
+
+I tested the program with different numbers of failed attempts and both trusted and untrusted devices to make sure the different branches worked correctly.
