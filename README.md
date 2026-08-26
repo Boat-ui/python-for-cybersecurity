@@ -226,3 +226,46 @@ The program:
 - Prints the username in the result.
 
 I tested the program with both a successful login on the third attempt and three incorrect password attempts.
+
+
+## Day 7:
+
+Today I learned:
+
+- `for` loops, which are used to repeat code while going through a sequence of values.
+- `range()` and how it generates a sequence of numbers.
+- `range(start, stop)` starts at the given starting number and stops before the ending number.
+- Unlike `while` loops, `for` loops can automatically move through a sequence without manually increasing a counter.
+- How to use `for` loops to go through each character in a string.
+- Lists, which are used to store multiple values in one variable.
+- Python list indexes start from `0`.
+- How to access individual items in a list using their index.
+- `.append()` is used to add a new item to the end of a list.
+- How to use a `for` loop to process every item in a list.
+- How to combine `for` loops with `if/else` statements to make decisions about each item.
+- How to create a counter variable and increase it when an item meets a specific condition.
+- How loops can be used to process and count security-related data.
+
+### Security Practice
+
+I practiced using lists of usernames and accounts and used `for` loops to examine each account.
+
+I created a Security Account Scanner that identifies privileged accounts and standard accounts.
+
+I also used a counter to keep track of how many privileged accounts were found while the loop processed the entire list.
+
+### **Assignment for Day 7**
+
+**Security Account Scanner**
+
+The program:
+
+- Stores multiple usernames in a list.
+- Adds another username using `.append()`.
+- Uses a `for` loop to examine every account.
+- Identifies privileged accounts such as `admin`, `root`, and `owner`.
+- Prints a message for privileged and standard accounts.
+- Uses a counter to keep track of the number of privileged accounts detected.
+- Prints the total number of privileged accounts after checking the entire list.
+
+This assignment helped me combine lists, `for` loops, `if/else`, `or`, `.append()`, and counters into one cybersecurity-related program.
