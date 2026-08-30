@@ -269,3 +269,81 @@ The program:
 - Prints the total number of privileged accounts after checking the entire list.
 
 This assignment helped me combine lists, `for` loops, `if/else`, `or`, `.append()`, and counters into one cybersecurity-related program.
+
+
+## Day 8:
+
+Today I learned:
+
+- Functions, which are reusable blocks of code designed to perform a specific task.
+- How to define a function using `def`.
+- How to call a function to execute its code.
+- Parameters, which allow functions to receive information.
+- Arguments, which are the actual values passed into a function.
+- How a function can accept multiple parameters.
+- `return`, which sends a value back from a function.
+- The difference between `print()` and `return`.
+- How to store a returned value in a variable.
+- How to use a returned value in another `if/else` decision.
+- How to combine functions with `if`, `elif`, and `else`.
+
+### Security Practice
+
+I created functions that analyze login attempts and determine whether login activity is suspicious.
+
+I practiced passing usernames and failed login attempts into a function and returning different security risk levels based on the number of attempts.
+
+### **Assignment for Day 8**
+
+**Security Risk Analyzer**
+
+I created a function called `analyze_login(username, attempts)`.
+
+The function classifies login activity into:
+
+- **Low risk** for fewer than 5 attempts.
+- **Warning** for 5–9 attempts.
+- **Critical risk** for 10 or more attempts.
+
+The function returns the appropriate result instead of printing it directly.
+
+I then stored and printed the returned results and tested all three risk levels successfully.
+
+This helped me understand how functions can process information, return results, and be reused with different inputs.
+
+
+## Day 9:
+
+Today I learned:
+
+- Dictionaries, which store data as key/value pairs.
+- How to create a dictionary using `{}`.
+- How to access a value using its key.
+- How to update an existing dictionary value.
+- How to add a new key/value pair to a dictionary.
+- The `.get()` method and how it can safely retrieve a value when a key may not exist.
+- How to provide a default value with `.get()`.
+- How to use a `for` loop to go through dictionary keys.
+- How to use a key to retrieve its corresponding value while looping.
+- How to combine dictionaries with `for` loops and `if/else` statements.
+
+### Security Practice
+
+I worked with a login record containing information such as a username, failed login attempts, status, IP address, and device.
+
+I practiced updating information in the record, adding new information, handling missing information with `.get()`, and analyzing the login attempts.
+
+### **Assignment for Day 9**
+
+**Security Login Record Analyzer**
+
+The program:
+
+- Creates a dictionary containing login information.
+- Updates the number of failed attempts.
+- Adds a device to the login record.
+- Uses `.get()` to safely check for missing location information.
+- Uses a `for` loop to display the dictionary's keys and values.
+- Uses `if/else` to determine whether the login activity is suspicious.
+
+This assignment helped me understand how Python dictionaries can be used to store and analyze structured security information.
