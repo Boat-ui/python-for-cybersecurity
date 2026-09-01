@@ -347,3 +347,44 @@ The program:
 - Uses `if/else` to determine whether the login activity is suspicious.
 
 This assignment helped me understand how Python dictionaries can be used to store and analyze structured security information.
+
+
+## Day 10:
+
+Today I learned:
+
+- File handling in Python.
+- How to open a file using `open()`.
+- Read mode and how `"r"` is used to read a file.
+- How `with open()` safely handles files and automatically closes them.
+- How to read the entire contents of a file using `.read()`.
+- How to process a file one line at a time using a `for` loop.
+- How to use `"text" in line` to search for specific information.
+- How to use `.strip()` to remove unwanted whitespace and newline characters.
+- How to use a counter to keep track of matching events while processing a file.
+
+### Security Practice
+
+I created a `security.txt` file containing simulated security log entries.
+
+I wrote a Python program that reads the log file line by line and searches for failed login attempts.
+
+Whenever a failed login is detected, the program reports it and increases a counter.
+
+After the entire file has been analyzed, the program displays the total number of failed login attempts.
+
+### **Assignment for Day 10**
+
+**Security Log Analyzer**
+
+The program:
+
+- Opens a security log using `with open()`.
+- Reads the file line by line.
+- Searches for lines containing `"failed"`.
+- Reports every failed login detected.
+- Uses a counter to track the total number of failed logins.
+- Displays the final number of failed login attempts.
+- Prints a message when the log analysis is complete.
+
+This assignment helped me understand how Python can be used to automatically process security logs and identify suspicious activity instead of manually checking every log entry.
