@@ -1,0 +1,15 @@
+Security monitoring started
+Login attempt detected
+Login successful
+Login failed
+Login failed
+Password changed
+Login successful
+Suspicious activity
+Login failed
+Suspicious activity detected
+Monitoring complete
+
+Failed login detected
+Suspicious activity detected
+Security scan complete
