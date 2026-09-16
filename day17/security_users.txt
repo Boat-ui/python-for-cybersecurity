@@ -1,0 +1,4 @@
+admin,administrator,5
+boat,standard,1
+guest,standard,4
+root,administrator,2

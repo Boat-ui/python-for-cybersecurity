@@ -1,0 +1,3 @@
+kwame,manager,4
+ama,staff,1
+kojo,staff,3

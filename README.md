@@ -631,3 +631,57 @@ The program:
 - Displays a message when security monitoring is complete.
 
 This assignment helped me understand how functions, dictionaries, and loops can work together to analyze structured security data in a reusable way.
+
+
+
+## Day 17:
+
+Today I learned:
+
+- How to read structured data from a text file line by line.
+- How to use `.split()` to break a line into separate pieces.
+- How `.split(",")` separates values using a comma as the delimiter.
+- How `.split()` with no argument separates values using whitespace.
+- Why data read from a file always starts out as text (strings), even numbers.
+- How to convert a string into an integer using `int()` so it can be used in comparisons.
+- How to combine file reading, `.strip()`, and `.split()` to build a dictionary from each line.
+- How to build a list of dictionaries by appending each new dictionary inside the loop.
+- Why a variable used in a `for` loop only holds the last item once the loop finishes.
+- Why passing an entire list into a function meant for one dictionary causes errors.
+- The importance of looping through a list *after* it's built, to send each item into a function one at a time.
+
+### Security Practice
+
+I created a Python program that reads user login data from a file called `security_users.txt`, where each line stores a username, role, and number of login attempts separated by commas.
+
+The program opens the file, reads it line by line, strips extra whitespace, and splits each line into its individual values. Each line is converted into a dictionary containing the username, role, and attempts (converted into an integer), and each dictionary is added to a `users` list.
+
+A `check_attempts()` function checks one user dictionary at a time and returns `Suspicious` or `Normal` based on the number of login attempts. A `for` loop then passes every user in the list into the function, one at a time, and prints the result.
+
+### **Assignment for Day 17**
+
+**Security User File Analyzer**
+
+The program:
+
+- Creates an empty `users` list.
+- Opens `security_users.txt` using `with open()`.
+- Reads the file line by line.
+- Uses `.strip()` to clean each line.
+- Uses `.split(",")` to separate the values.
+- Creates a dictionary for each user containing `username`, `role`, and `attempts`.
+- Converts `attempts` into an integer.
+- Adds each dictionary to the `users` list.
+- Creates a `check_attempts()` function that accepts one user dictionary.
+- Loops through every user in the list and passes each one to the function.
+- Prints each username and its security result (`Suspicious` for 3+ attempts, `Normal` for fewer).
+- Prints a message when security monitoring is complete.
+
+This assignment helped me understand how to turn raw text data from a file into structured dictionaries, and reinforced why a loop is needed to send each item in a list into a function individually, rather than passing the whole list or relying on a leftover loop variable.
+
+### Bugs I ran into and fixed
+
+- Used `.split(" ")` instead of `.split(",")`, which caused an `IndexError` because the file uses commas, not spaces.
+- Passed the whole `users` list into `check_attempts()` instead of one dictionary, which doesn't match what the function expects.
+- Had a typo, `"usermame"` instead of `"username"`.
+- Only printed results for the last user (`root`) because I used the leftover `user` variable from the file-reading loop instead of looping through `users` again after building the list.
