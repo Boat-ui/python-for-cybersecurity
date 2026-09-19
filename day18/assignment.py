@@ -1,7 +1,5 @@
 users = []
 suspicious = 0
-highest_attempt = 0
-highest_user = ""
 
 with open("security_users.txt") as file:
     for line in file:
@@ -27,10 +25,6 @@ for user in users:
         suspicious = suspicious + 1
     print(user["username"], result)
 
-    if user["attempts"] > highest_attempt:
-        highest_attempt = user["attempts"]
-        highest_user = user["username"]
+print("Total number of users suspicious: ", suspicious)
 
-print("Highest-risk user:", highest_user)
-print("Login attempts:", highest_attempt)
 print("Security monitoring complete")
